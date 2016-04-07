@@ -102,16 +102,17 @@ This script contains easy to use methods for accessing fields from the game arra
 
 <br><br><br>
 Variables used in the following methods:
- - `winnerIndex` <br>
+* `winnerIndex` <br>
     The game array index of the winner. This is '1' by default in the methods, so it does not have to be specified. If there are several winners though, `getNumberWinners()` can be used to iterate through all the winners (up to two).
- - `playerIndex`  <br>
+* `playerIndex`  <br>
     The index of the player in the array, which is '1' by default in the methods. This can be found using `getLosingPlayerIndex()`, `getWinningPlayerIndex(winnerIndex)`, or by iterating through all the players with `getNumberPlayers()`.
- - `play` <br>
+* `play` <br>
     The index of the play in the game array, which is '1' by default in the methods. There are 2 to 6 plays in a poker game, which are "Pre-game actions", "Pocket Cards", "Flop", "Turn", "River", and "Showdown". The total number of plays in a game can be found with `getNumberRounds()`.
- - `action` <br>
+* `action` <br>
     The action of a user during a play. This defaults to '1' in the methods. The number of actions a user has taken during a play can be found with `getNumActions(playerIndex, play)`.
- - `cardIDX` <br>
+* `cardIDX` <br>
     The index of the cards played, and defaults to returning an array of Strings. The number of cards is always 5.
+
 <br><br>
 <b>General Player Info Methods:</b>
 <br><br>
