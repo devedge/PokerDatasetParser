@@ -101,7 +101,7 @@ This script contains easy to use methods for accessing fields from the game arra
     Returns the number of rounds played as an Int
 
 <br><br><br>
-Variables used in the following methods:
+<i>Variables used in the following methods:</i>
 * `winnerIndex` <br>
     The game array index of the winner. This is '1' by default in the methods, so it does not have to be specified. If there are several winners though, `getNumberWinners()` can be used to iterate through all the winners (up to two).
 * `playerIndex`  <br>
