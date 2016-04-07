@@ -1,6 +1,6 @@
 ## About
 
-Python parser script for a poker dataset taken from [here](https://web.archive.org/web/20110205042259/http://www.outflopped.com/questions/286/obfuscated-datamined-hand-histories)
+Python parser script for Texas Hold'em poker dataset taken from [here](https://web.archive.org/web/20110205042259/http://www.outflopped.com/questions/286/obfuscated-datamined-hand-histories)
 
 ***
 
@@ -18,7 +18,7 @@ Where `/absolute/path/to/dataset/folder`  contains all the (unzipped) text data 
 
 
 
-[Download the ZIP containing the script.](https://github.com/devedge/Scripts/raw/master/Poker%20Dataset%20Parser/data/PokerDatasetParser.zip) This has only been tested with Python >= 3.5.<br><br>
+[Download the ZIP containing the script.](https://github.com/devedge/PokerDatasetParser/raw/master/data/PokerDatasetParser.zip) This has only been tested with Python >= 3.5.<br><br>
 
 
 ## Setup
@@ -31,7 +31,7 @@ The structure of the CSV file (rows and columns) needs to be manually defined in
 The general program logic is split up into three different Python files. The parser itself is `datafileParser.py`, the API for interacting with the parser is `parserAPI.py`, and the front-end that handles interaction with the user and creates the CSV files is `csvGenerator.py`.
 
 <br>
-<h4>`csvGenerator.py` [view file](https://github.com/devedge/Scripts/blob/master/Poker%20Dataset%20Parser/csvGenerator.py)</h4> <br>
+<h4>`csvGenerator.py` [view file](https://github.com/devedge/PokerDatasetParser/blob/master/csvGenerator.py)</h4> <br>
 The part of the script that needs to be edited is the first method in `writeCSV()` at the top of the file. 
 <br><br>
 The parser returns one game at a time (gameArray), and between the comment headers `#### ---- ####` is the code where each value is added to the current row. For each value you want to add to the current row, use `csvrow.append()`. These values are extracted using methods from `parserAPI.py`, which are all defined below in the `parserAPI.py` section.
@@ -72,7 +72,7 @@ def writeCSV(gameArray):
 The 'csvGenerator.py' script is in charge of getting user input, scanning every directory and subdirectory, passing each file to the datafileParser.py script, and writing the values to a CSV file.
 
 <br><br>
-<h4>`parserAPI.py` [view file](https://github.com/devedge/Scripts/blob/master/Poker%20Dataset%20Parser/parserAPI.py)</h4> <br>
+<h4>`parserAPI.py` [view file](https://github.com/devedge/PokerDatasetParser/blob/master/parserAPI.py)</h4> <br>
 This script contains easy to use methods for accessing fields from the game arrays that `datafileParser.py` returns.
 <br><br>
 <b>General Methods:</b>
@@ -159,6 +159,6 @@ Variables used in the following methods:
     Returns the losing hand description as a String.
 
 <br><br>
-<h4>`datafileParser.py` [view file](https://github.com/devedge/Scripts/blob/master/Poker%20Dataset%20Parser/datafileParser.py)</h4> <br>
-This script parses a poker game text file. It saves each game in the file as a gameArray, and saves all of the games in one long gamesList, which is returned to `csvGenerator()`. [An example gameArray](https://github.com/devedge/Scripts/blob/master/Poker%20Dataset%20Parser/data/example%20gameArray.txt)
+<h4>`datafileParser.py` [view file](https://github.com/devedge/PokerDatasetParser/blob/master/datafileParser.py)</h4> <br>
+This script parses a poker game text file. It saves each game in the file as a gameArray, and saves all of the games in one long gamesList, which is returned to `csvGenerator()`. [An example gameArray](https://github.com/devedge/PokerDatasetParser/blob/master/data/example%20gameArray.txt)
 
