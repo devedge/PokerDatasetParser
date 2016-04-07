@@ -100,9 +100,7 @@ This script contains easy to use methods for accessing fields from the game arra
 * `getNumberRounds()` <br>
     Returns the number of rounds played as an Int
 
-<br><br>
-<b>General Player Info Methods:</b>
-<br><br>
+<br><br><br>
 Variables used in the following methods:
  - `winnerIndex` <br>
     The game array index of the winner. This is '1' by default in the methods, so it does not have to be specified. If there are several winners though, `getNumberWinners()` can be used to iterate through all the winners (up to two).
@@ -114,6 +112,8 @@ Variables used in the following methods:
     The action of a user during a play. This defaults to '1' in the methods. The number of actions a user has taken during a play can be found with `getNumActions(playerIndex, play)`.
  - `cardIDX` <br>
     The index of the cards played, and defaults to returning an array of Strings. The number of cards is always 5.
+<br><br>
+<b>General Player Info Methods:</b>
 <br><br>
 * `getNumberPlayers()` <br>
     Returns the number of players as an Int
