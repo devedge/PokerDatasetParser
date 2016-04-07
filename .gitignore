@@ -1,0 +1,9 @@
+__pycache__/
+dataset/
+program\ output/
+test\ subset/
+compressToZIP.sh
+datasetRunnerScript.sh
+errorlog.txt
+LocalReadmeNotes.txt
+testsetRunnerScript.sh

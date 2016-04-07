@@ -1,0 +1,94 @@
+[
+    3039332630,                        # 0  game ID
+    '2009-07-07',                      # 1  date
+    '12:25:48(ET)',                    # 2  time and timezone
+    5,                                 # 3  number of rounds
+    ['7s', '5h', 'As', '7c', '3c'],    # 4  cards on board
+    33.0,                              # 5  total pot amount
+    6,                                 # 6  num players
+    1,                                 # 7  dealer player
+    2,                                 # 8  small blind player
+    3,                                 # 9  big blind player
+    [
+        True,                          # 0 game won              # 10  win info
+        False,                         # 1 only collected
+        1,                             # 2 number of winners
+        [4],                           # 3 index of winners
+        [30.85],                       # 4 money received (for each winner, can be appended)
+        [                              # 5 winning/collected hand
+            [['Ad', '8h']],            # 0 cards played (usually two)
+            [['B:As', 'P:Ad', 'B:7s', 'B:7c', 'P:8h']],   # 1 cards on table (usually five)
+            ['Two Pair, aces and sevens(eight kicker)']   # 2 card description
+        ]
+    ], 
+    [
+        True,                          #  is there a loser      # 11  lost info
+        3,                             #  index of loser
+        [                              #  losing hand
+            ['Ah', '6d'],              # cards played (usually two)
+            ['B:As', 'P:Ah', 'B:7s', 'B:7c', 'P:6d'],     # cards on table (usually five)
+            'Two Pair, aces and sevens'                   # card description
+        ]
+    ], 
+    [
+        'PQVEgCUzDSdSNFZD5wXuvw',      # player ID
+        198.0,                         # dollars in chips
+        [['NA']],                      # user actions before the game starts (usually empty, other than small/big blind, antes, or sitout)
+        [['Folds']],                   # user actions during the pocket cards
+        [['NA']],                      # user actions during the flop
+        [['NA']],                      # user actions during the turn
+        [['NA']],                      # user actions during the river
+        [['NA']]                       # user actions during the showdown
+    ], 
+    [
+        'rgOnpLfFy41kcunwSZiZIA', 
+        315.35, 
+        [['Posts small blind', 1.0]], 
+        [['Folds']], 
+        [['NA']], 
+        [['NA']], 
+        [['NA']], 
+        [['NA']]
+    ], 
+    [
+        'iLXjlX7GiTc2dQsqWQEGNA', 
+        97.0, 
+        [['Posts big blind', 2.0]], 
+        [['Checks']], 
+        [['Bets', 4.0], ['Calls', 4.0]], 
+        [['Checks'], ['Calls', 6.0]], 
+        [['Checks']], 
+        [['Shows', ['Ah', '6d']]]
+    ], 
+    [
+        '5CpYtIEVueIoxdY5Zej0Kw', 
+        586.7, 
+        [['NA']], 
+        [['Calls', 2.0]], 
+        [['Raises', ['8', '8']]], 
+        [['Bets', 6.0]], 
+        [['Checks']], 
+        [['Shows', ['Ad', '8h']], 
+        ['Collects', 30.85]]
+    ], 
+    [
+        'T39pL39SjbaS2PMPefu2zQ', 
+        450.43, 
+        [['NA']], 
+        [['Folds']], 
+        [['NA']], 
+        [['NA']], 
+        [['NA']], 
+        [['NA']]
+    ], 
+    [
+        'NWBPM+8o1tSQ2ZNVW4jdWw', 
+        141.6, 
+        [['NA']], 
+        [['Folds']], 
+        [['NA']], 
+        [['NA']], 
+        [['NA']], 
+        [['NA']]
+    ]
+]
