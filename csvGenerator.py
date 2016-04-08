@@ -13,8 +13,6 @@ csvFile = ""
 def writeCSV(gameArray):
     global csvFile
 
-    print(gameArray)
-
     # Initialize the gameArray in parserAPI
     parserAPI.initGameArray(gameArray)
 
